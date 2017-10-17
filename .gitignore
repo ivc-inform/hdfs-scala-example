@@ -11,3 +11,4 @@ project/plugins/project/
 
 testfile.txt
 .testfile.txt.crc
+.idea/
