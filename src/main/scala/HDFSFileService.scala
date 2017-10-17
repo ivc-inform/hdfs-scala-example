@@ -8,6 +8,8 @@ import org.apache.hadoop.conf._
 import org.apache.hadoop.fs._
 
 object HDFSFileService {
+  System.setProperty("hadoop.home.dir", "/")
+  
   private val conf = new Configuration()
   private val hdfsCoreSitePath = new Path("core-site.xml")
   private val hdfsHDFSSitePath = new Path("hdfs-site.xml")

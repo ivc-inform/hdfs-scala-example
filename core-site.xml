@@ -9,6 +9,10 @@
     <value>hdfs://localhost:8020</value>
   </property>
   <property>
+    <name>hadoop.home.dir</name>
+    <value>/</value>
+  </property>
+  <property>
     <name>hadoop.tmp.dir</name>
     <value>/tmp/hadoop-${user.name}</value>
     <description>A base for other temporary directories.</description>

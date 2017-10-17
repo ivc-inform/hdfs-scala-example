@@ -1,10 +1,10 @@
 package bleibinhaus.hdfsscalaexample
 
 import java.io._
-import org.scalatest.FunSpec
-import org.scalatest.matchers.ShouldMatchers
 
-class HDFSFileServiceTest extends FunSpec with ShouldMatchers {
+import org.scalatest.{FunSpec, Matchers}
+
+class HDFSFileServiceTest extends FunSpec with Matchers {
   val testfileName = "testfile.txt"
   val testText = "Example text"
 
