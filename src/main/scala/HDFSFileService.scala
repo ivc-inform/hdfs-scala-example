@@ -19,9 +19,9 @@ object HDFSFileService {
 
   def saveFile(filepath: String): Unit = {
     val file = new File(filepath)
-    val out = fileSystem.create(new Path(file.getName))
+    val out: FSDataOutputStream = fileSystem.create(new Path(file.getName))
     val in = new BufferedInputStream(new FileInputStream(file))
-    var b = new Array[Byte](1024)
+    val b = new Array[Byte](1024)
     var numBytes = in.read(b)
     while (numBytes > 0) {
       out.write(b, 0, numBytes)
